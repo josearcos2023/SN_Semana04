@@ -1,0 +1,35 @@
+<div class="container p-4" style="margin-top:70px;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-reader">
+                    <h3 class="text-uppercase">CREAR PRODUCTO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/productos/add" method="post">
+                        <div class="input-group mt-2">
+                            <label for="name" class="input-group-text">Nombre del producto</label>
+                            <input class="form-control" type="text" name="nompro" id="nompro" placeholder="Nombre" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="lastname" class="input-group-text">Precio</label>
+                            <input class="form-control" type="text" name="prepro" id="apepro" placeholder="Precio" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Tipo</label>
+                            <input class="form-control" type="text" name="tipopro" id="nrodnipro" placeholder="Tipo" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Código</label>
+                            <input class="form-control" type="text" name="codpro" id="telpro" placeholder="Código" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">Guardar</button>
+                            <button class="btn btn-danger"><a class="nav-link link-light" aria-current="page" href="/productos/list">Cancelar</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
